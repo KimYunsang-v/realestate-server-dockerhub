@@ -1,11 +1,13 @@
 #!/bin/sh
 
-DATE = `date +%Y-%m-%d`
+TODAY=`date +%Y-%m-%d`
 
-echo ${DATE}
+echo `date +%Y-%m-%d`
+
+echo ${TODAY}
 
 git add .
 
-git commit -m "${DATE} 배포"
+git commit -m "${TODAY} 배포"
 
 git push origin master
